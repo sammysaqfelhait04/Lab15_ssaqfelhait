@@ -19,3 +19,19 @@ plt.ylabel("Cube of Value")
 
 plt.savefig("cubes_5.png")
 plt.close()
+
+
+x_values_5000 = list(range(1, 5001))
+y_values_5000 = []
+
+for x in x_values_5000:
+    y_values_5000.append(x ** 3)
+
+plt.figure()
+plt.plot(x_values_5000, y_values_5000)
+plt.title("First 5000 Cubes")
+plt.xlabel("Value")
+plt.ylabel("Cube of Value")
+
+plt.savefig("cubes_5000.png")
+plt.close()
